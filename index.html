@@ -9,123 +9,74 @@
 
 <style>
 
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #111;
     color: #fff;
 }
 
-header{
+header {
     background: #1e1e1e;
     padding: 20px;
     text-align: center;
 }
 
-nav{
+nav {
     padding: 10px;
     text-align: center;
     background: #222;
 }
 
-nav a{
+nav a {
     color: #fff;
     text-decoration: none;
 }
 
-main{
+main {
     max-width: 900px;
     margin: auto;
     padding: 20px;
 }
 
-.card{
+.card {
     background: #1c1c1c;
     padding: 15px;
     margin: 15px 0;
     border-radius: 8px;
 }
 
-.card img{
+.card img {
     width: 100%;
     border-radius: 8px;
 }
 
-.card a{
+.card a {
     color: #00aaff;
     text-decoration: none;
 }
 
-.card a:hover{
+.card a:hover {
     text-decoration: underline;
 }
 
-footer{
-    text-align: center;
-    padding: 20px;
-    background: #1e1e1e;
-}
 
-.apoio{
-    text-align: center;
-    margin-top: 20px;
-}
+/* =========================
+   NOTÍCIA DE ONE PIECE
+========================= */
 
-</style>
-
-</head>
-
-<body>
-
-<header>
-    <h1>Portal Lz</h1>
-    <p>Notícias, curiosidades e guias sobre jogos</p>
-</header>
-
-<nav>
-    <a href="#">Notícias</a>
-</nav>
-
-<main>
-
-<!-- NOTÍCIA DE ONE PIECE -->
-    <div class="card">
-<section class="noticia-destaque">
-    <div class="noticia-imagem">
-        <!-- Coloque aqui a imagem de One Piece -->
-        <img src="imagens/one-piece.jpg" alt="One Piece">
-    </div>
-
-    <div class="noticia-conteudo">
-        <span class="categoria">ONE PIECE</span>
-
-        <h2>One Piece: os acontecimentos mais recentes do mangá deixam os fãs em choque</h2>
-
-        <p>
-            Os capítulos mais recentes de One Piece trouxeram grandes revelações,
-            novos acontecimentos e deixaram várias perguntas para os próximos capítulos.
-            Confira tudo o que aconteceu e os principais spoilers!
-        </p>
-
-        <a href="one-piece.html" class="botao-noticia">
-            LER NOTÍCIA →
-        </a>
-    </div>
-</section>
-
-<style>
 .noticia-destaque {
     display: flex;
     gap: 20px;
     background: #1c1c1c;
     border-radius: 12px;
     overflow: hidden;
-    margin: 30px 0;
+    margin: 15px 0;
     border: 1px solid #292929;
 }
 
 .noticia-imagem {
-    width: 45%;
+    width: 40%;
     min-height: 250px;
 }
 
@@ -137,7 +88,7 @@ footer{
 }
 
 .noticia-conteudo {
-    padding: 25px;
+    padding: 20px;
     flex: 1;
 }
 
@@ -165,8 +116,8 @@ footer{
     margin-top: 10px;
     padding: 12px 20px;
     background: #ff3333;
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
     border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
@@ -174,11 +125,15 @@ footer{
 
 .botao-noticia:hover {
     background: #cc2222;
-    transform: translateY(-2px);
 }
 
-/* CELULAR */
+
+/* =========================
+   CELULAR
+========================= */
+
 @media (max-width: 700px) {
+
     .noticia-destaque {
         flex-direction: column;
     }
@@ -186,6 +141,7 @@ footer{
     .noticia-imagem {
         width: 100%;
         height: 220px;
+        min-height: 0;
     }
 
     .noticia-conteudo {
@@ -196,129 +152,235 @@ footer{
         font-size: 21px;
     }
 }
-</style>
-    </div>
-        
-        <h2>GTA 6: tudo sobre o novo jogo da Rockstar</h2>
 
-        <img src="gta6.jpg" alt="GTA 6">
-         <img src="imagens/one-piece.jpg" style="width: 300px; height: auto;">
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+}
+
+.apoio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+    <h1>Portal Lz</h1>
+
+    <p>Notícias, curiosidades e guias sobre jogos</p>
+
+</header>
+
+
+<nav>
+
+    <a href="#">Notícias</a>
+
+</nav>
+
+
+<main>
+
+
+<!-- =========================
+     ONE PIECE
+========================= -->
+
+<div class="noticia-destaque">
+
+    <div class="noticia-imagem">
+
+        <img src="one-piece.jpg" alt="One Piece">
+
+    </div>
+
+
+    <div class="noticia-conteudo">
+
+        <span class="categoria">ONE PIECE</span>
+
+        <h2>
+            One Piece: os acontecimentos mais recentes do mangá deixam os fãs em choque
+        </h2>
+
         <p>
+            Os capítulos mais recentes de One Piece trouxeram grandes revelações,
+            novos acontecimentos e deixaram várias perguntas para os próximos capítulos.
+            Confira tudo o que aconteceu e os principais spoilers!
+        </p>
+
+        <a href="one-piece.html" class="botao-noticia">
+            LER NOTÍCIA →
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     GTA 6
+========================= -->
+
+<div class="card">
+
+    <h2>GTA 6: tudo sobre o novo jogo da Rockstar</h2>
+
+    <img src="gta6.jpg" alt="GTA 6">
+
+    <p>
         GTA 6 promete ser um dos maiores lançamentos da história dos games.
         Confira novidades e tudo que sabemos até agora.
-        </p>
+    </p>
 
-        <a href="gta6.html">Ler matéria completa Aqui</a>
+    <a href="gta6.html">
+        Ler matéria completa Aqui
+    </a>
 
-    </div>
+</div>
 
 
-    <!-- GTA San Andreas -->
+<!-- =========================
+     GTA SAN ANDREAS
+========================= -->
 
-    <div class="card">
+<div class="card">
 
-        <h2>GTA San Andreas Legendado no Android</h2>
+    <h2>GTA San Andreas Legendado no Android</h2>
 
-        <img src="gtasa.jpg" alt="GTA San Andreas Android">
+    <img src="gtasa.jpg" alt="GTA San Andreas Android">
 
-        <p>
+    <p>
         Aprenda como instalar GTA San Andreas no Android com legenda em português.
         Confira o passo a passo e os requisitos para rodar o jogo no celular.
-        </p>
+    </p>
 
-        <a href="gtasa.html">Ver tutorial completo Aqui</a>
+    <a href="gtasa.html">
+        Ver tutorial completo Aqui
+    </a>
 
-    </div>
+</div>
 
 
-    <!-- Mídias físicas -->
+<!-- =========================
+     MÍDIAS FÍSICAS
+========================= -->
 
-    <div class="card">
+<div class="card">
 
-        <h2>O fim das mídias físicas? Entenda o que está acontecendo</h2>
+    <h2>O fim das mídias físicas? Entenda o que está acontecendo</h2>
 
-        <img src="midias.jpg" alt="Mídias Físicas">
+    <img src="midias.jpg" alt="Mídias Físicas">
 
-        <p>
+    <p>
         Cada vez mais jogadores estão comprando jogos digitais.
         Será que os discos e cartuchos estão com os dias contados?
-        </p>
+    </p>
 
-        <a href="midias-fisicas.html">
-            Ler matéria completa Aqui
-        </a>
+    <a href="midias-fisicas.html">
+        Ler matéria completa Aqui
+    </a>
 
-    </div>
+</div>
 
 
-    <!-- Xbox Game Pass -->
+<!-- =========================
+     XBOX GAME PASS
+========================= -->
 
-    <div class="card">
+<div class="card">
 
-        <img src="xbox.jpg" alt="Xbox Game Pass">
+    <img src="xbox.jpg" alt="Xbox Game Pass">
 
-        <h2>Xbox Game Pass recebe novos jogos em agosto; veja a lista completa</h2>
+    <h2>
+        Xbox Game Pass recebe novos jogos em agosto; veja a lista completa
+    </h2>
 
-        <p>
+    <p>
         A Microsoft anunciou uma nova leva de jogos para o Xbox Game Pass.
         Confira todos os títulos que chegam ao catálogo em agosto.
-        </p>
+    </p>
 
-        <a href="xbox-game-pass-agosto.html">
-            Ler matéria →
-        </a>
+    <a href="xbox-game-pass-agosto.html">
+        Ler matéria →
+    </a>
 
-    </div>
+</div>
 
 
-    <!-- PS5 Wolverine -->
+<!-- =========================
+     PS5 WOLVERINE
+========================= -->
 
-    <div class="card">
+<div class="card">
 
-        <img src="ps5-wolwerine.jpg" alt="PS5 edição especial de Marvel's Wolverine">
+    <img src="ps5-wolwerine.jpg"
+         alt="PS5 edição especial de Marvel's Wolverine">
 
-        <h2>Sony anuncia PS5 especial de Marvel's Wolverine</h2>
+    <h2>
+        Sony anuncia PS5 especial de Marvel's Wolverine
+    </h2>
 
-        <p>
+    <p>
         A Sony revelou uma edição limitada do PlayStation 5 inspirada em
         Marvel's Wolverine. Confira o visual do console, preço, data de
         lançamento e quando começam as pré-vendas.
-        </p>
+    </p>
 
-        <a href="ps5-wolverine.html">
-            Ler matéria →
-        </a>
+    <a href="ps5-wolverine.html">
+        Ler matéria →
+    </a>
 
-    </div>
+</div>
 
 
-    <!-- Apoio -->
+<!-- =========================
+     APOIO
+========================= -->
 
-    <div class="apoio">
+<div class="apoio">
 
-        <div class="card">
+    <div class="card">
 
-            <h2>Ajude o Portal Lz ❤️</h2>
+        <h2>Ajude o Portal Lz ❤️</h2>
 
-            <p>
+        <p>
             Bom Dia, Boa Tarde e Boa Noite 😀
             <br><br>
+
             Se puder me apoiar, qualquer valor ajuda esse projeto:
             <br><br>
-            lz4tation@gmail.com
-            </p>
 
-        </div>
+            lz4tation@gmail.com
+        </p>
 
     </div>
 
+</div>
+
+
 </main>
+
 
 <footer>
 
     <p>© 2026 Portal Lz</p>
 
 </footer>
+
 
 </body>
 
