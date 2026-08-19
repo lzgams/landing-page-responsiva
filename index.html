@@ -91,7 +91,116 @@ footer{
     <!-- GTA 6 -->
 
     <div class="card">
+<!-- NOTÍCIA DE ONE PIECE -->
+<section class="noticia-destaque">
+    <div class="noticia-imagem">
+        <!-- Coloque aqui a imagem de One Piece -->
+        <img src="imagens/one-piece.jpg" alt="One Piece">
+    </div>
 
+    <div class="noticia-conteudo">
+        <span class="categoria">ONE PIECE</span>
+
+        <h2>One Piece: os acontecimentos mais recentes do mangá deixam os fãs em choque</h2>
+
+        <p>
+            Os capítulos mais recentes de One Piece trouxeram grandes revelações,
+            novos acontecimentos e deixaram várias perguntas para os próximos capítulos.
+            Confira tudo o que aconteceu e os principais spoilers!
+        </p>
+
+        <a href="one-piece.html" class="botao-noticia">
+            LER NOTÍCIA →
+        </a>
+    </div>
+</section>
+
+<style>
+.noticia-destaque {
+    display: flex;
+    gap: 20px;
+    background: #1c1c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 30px 0;
+    border: 1px solid #292929;
+}
+
+.noticia-imagem {
+    width: 45%;
+    min-height: 250px;
+}
+
+.noticia-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.noticia-conteudo {
+    padding: 25px;
+    flex: 1;
+}
+
+.categoria {
+    color: #ff3333;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.noticia-conteudo h2 {
+    color: white;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.noticia-conteudo p {
+    color: #bbb;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.botao-noticia {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #ff3333;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-noticia:hover {
+    background: #cc2222;
+    transform: translateY(-2px);
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+    .noticia-destaque {
+        flex-direction: column;
+    }
+
+    .noticia-imagem {
+        width: 100%;
+        height: 220px;
+    }
+
+    .noticia-conteudo {
+        padding: 20px;
+    }
+
+    .noticia-conteudo h2 {
+        font-size: 21px;
+    }
+}
+</style>
+
+        
         <h2>GTA 6: tudo sobre o novo jogo da Rockstar</h2>
 
         <img src="gta6.jpg" alt="GTA 6">
